@@ -1,11 +1,13 @@
-# FileReformat 💖✨
+# FileReformat
 FileReformat is a recursive file renaming utility that helps you **slay your messy file names**. 
 It converts them into consistent formats, normalizes extensions, and gives you a preview before renaming anything.
 
-## Features 🌟
-```bash
-node RenameFiles.js <directory-to-rename>
+## Features
+
+```sh
+bun run RenameFiles.ts <directory-to-rename>
 ```
+
 - Convert file names to different formats: `[--format=pascal|snake|dash|camel|screaming]`
   - `pascal` (default) → `MyFileName.txt`
   - `camel` → `myFileName.txt`
@@ -21,10 +23,10 @@ node RenameFiles.js <directory-to-rename>
   - Reads `LastTask.json`, prompts for confirmation, renames files, then deletes the JSON
 
 ## Installation
-Make sure you have [Node.js](https://nodejs.org/) installed.
+Make sure you have [Bun](https://bun.sh/) installed.
 
-```bash
-git clone https://github.com/asboy2035/FileReformat
+```sh
+git clone https://github.com/a35hie/FileReformat
 cd FileReformat
-npm i
+bun i
 ```

@@ -1,0 +1,8 @@
+README.md
+LICENSE.txt
+.idea
+examples
+node_modules
+bun.lock
+.prettierignore
+.gitignore

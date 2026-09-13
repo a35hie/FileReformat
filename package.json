@@ -1,19 +1,25 @@
 {
-  "name": "filereformat",
-  "version": "1.0.0",
+  "name": "@a35hie/file-reformat",
+  "version": "1.1.0",
   "description": "Reformat file names into PascalCase, camelCase, snake_case, SCREAMING_CASE, or dash-case.",
-  "main": "RenameFiles.js",
+  "main": "RenameFiles.ts",
+  "author": "ash",
+  "license": "Apache-2.0",
+  "type": "module",
   "scripts": {
-    "test": "node RenameFiles.js examples --show"
+    "test": "bun run RenameFiles.ts examples --show",
+    "format": "prettier --write . --ignore-path .prettierignore --experimental-cli"
   },
   "keywords": [
     "formatter",
     "filenames"
   ],
-  "author": "ash",
-  "license": "Apache-2.0",
-  "type": "commonjs",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.5.1",
+    "prettier": "^3.9.6"
   }
 }
